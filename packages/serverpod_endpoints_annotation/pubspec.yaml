@@ -1,6 +1,6 @@
 name: serverpod_endpoints_annotation
 description: Serverpod Endpoint annotation package for endpoints generation
-version: 0.1.4
+version: 0.1.5
 
 
 environment:
