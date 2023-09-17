@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/packages/serverpod_endpoints_annotation/melos_serverpod_endpoints_annotation.iml" filepath="$PROJECT_DIR$/packages/serverpod_endpoints_annotation/melos_serverpod_endpoints_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/serverpod_endpoints_generator/melos_serverpod_endpoints_generator.iml" filepath="$PROJECT_DIR$/packages/serverpod_endpoints_generator/melos_serverpod_endpoints_generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/melos_serverpod_packages.iml" filepath="$PROJECT_DIR$/melos_serverpod_packages.iml" />
+    </modules>
+  </component>
+</project>

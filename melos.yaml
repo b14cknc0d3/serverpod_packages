@@ -1,0 +1,30 @@
+name: serverpod_packages
+repository: https://github.com/b14cknc0d3/serverpod_packages
+
+packages:
+  - packages/**
+
+command:
+  version: 
+    branch: main
+    releaseUrl: true
+  
+  scripts:
+    lint:all:
+      run: melos run analyze && melos run format
+      description: Run all static  analysis checks.
+    
+    analyze: 
+      run: |
+        melos exec -c 10 -- \
+          dart analyze --fatal-infos
+      description: Run 'dart analyze' for all packages.
+    
+    format:
+      run: melos exec dart format . --fix
+      description: Run 'dart format' for all packages.
+    
+    format_check:
+      run: melos exec dart format . --set-exit-if-changed
+      description: Run 'dart format' for all packages.
+    
