@@ -1,0 +1,20 @@
+targets:
+  $default:
+    builders:
+      source_gen:combining_builder:
+        options:
+          ignore_for_file:
+          - lint_alpha
+          - lint_beta
+      serverpod_endpoints_generator:|endpointGenerator:
+        generate_for:
+          - lib/src/**/*.dart
+builders:
+  serverpod_endpoints_generator:
+    import: "package:serverpod_endpoints_generator/serverpod_endpoints_generator.dart"
+
+    build_extensions: {".dart": [".gen_endpoint.dart"]}
+    auto_apply: dependents
+    build_to: source
+    builder_factories: ['endpointGenerator']
+    # applies_builders: ["source_gen|combining_builder"]
