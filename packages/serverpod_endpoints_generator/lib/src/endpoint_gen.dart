@@ -1,7 +1,4 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'dart:math';
-
-import 'package:analyzer/dart/ast/ast.dart';
 import 'package:code_builder/code_builder.dart';
 import 'package:dart_style/dart_style.dart';
 import 'package:serverpod_endpoints_generator/src/method_gen.dart';
